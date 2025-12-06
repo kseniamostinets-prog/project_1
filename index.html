@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор чаевых</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Калькулятор чаевых</h1>
+
+      <label>
+        Сумма счёта
+        <input id="bill" type="number" min="0" step="0.01" placeholder="Напр. 1200" />
+      </label>
+
+      <label>
+        Чаевые (%)
+        <input id="tip" type="number" min="0" step="1" value="10" />
+      </label>
+
+      <label>
+        Количество людей
+        <input id="people" type="number" min="1" step="1" value="1" />
+      </label>
+
+      <button id="calc">Посчитать</button>
+
+      <p id="result" class="result"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
