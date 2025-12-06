@@ -1,5 +1,5 @@
 :root{
-  --bg: #f0f9f4;
+  --bg: #fff0f6;
   --card: #ffffffcc;
   --text: #0a3d1f;
   --muted: #2d5940;
@@ -21,6 +21,34 @@ body{
   display: grid;
   place-items: center;
   padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Ctext x='8%25' y='15%25' font-size='45' opacity='0.15'%3E🍰%3C/text%3E%3Ctext x='72%25' y='22%25' font-size='38' opacity='0.12'%3E🧁%3C/text%3E%3Ctext x='35%25' y='85%25' font-size='42' opacity='0.14'%3E🍪%3C/text%3E%3Ctext x='88%25' y='68%25' font-size='40' opacity='0.13'%3E🎂%3C/text%3E%3Ctext x='15%25' y='48%25' font-size='36' opacity='0.11'%3E🍩%3C/text%3E%3Ctext x='92%25' y='35%25' font-size='44' opacity='0.15'%3E🍭%3C/text%3E%3Ctext x='48%25' y='58%25' font-size='39' opacity='0.12'%3E🍫%3C/text%3E%3Ctext x='25%25' y='28%25' font-size='41' opacity='0.13'%3E🍰%3C/text%3E%3Ctext x='62%25' y='92%25' font-size='37' opacity='0.14'%3E🧁%3C/text%3E%3C/svg%3E");
+  background-size: cover;
+  pointer-events: none;
+}
+
+body::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Ctext x='18%25' y='72%25' font-size='43' opacity='0.12'%3E🍪%3C/text%3E%3Ctext x='55%25' y='18%25' font-size='38' opacity='0.13'%3E🎂%3C/text%3E%3Ctext x='82%25' y='88%25' font-size='40' opacity='0.11'%3E🍩%3C/text%3E%3Ctext x='5%25' y='35%25' font-size='42' opacity='0.14'%3E🍭%3C/text%3E%3Ctext x='68%25' y='45%25' font-size='36' opacity='0.12'%3E🍫%3C/text%3E%3Ctext x='38%25' y='8%25' font-size='44' opacity='0.15'%3E🍰%3C/text%3E%3Ctext x='12%25' y='95%25' font-size='39' opacity='0.13'%3E🧁%3C/text%3E%3Ctext x='95%25' y='52%25' font-size='37' opacity='0.14'%3E🍪%3C/text%3E%3Ctext x='45%25' y='38%25' font-size='41' opacity='0.11'%3E🎂%3C/text%3E%3C/svg%3E");
+  background-size: cover;
+  pointer-events: none;
 }
 
 .card{
@@ -31,6 +59,36 @@ body{
   padding: 28px;
   box-shadow: 0 18px 60px rgba(26, 92, 58, 0.18);
   backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+.card::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Ctext x='28%25' y='62%25' font-size='40' opacity='0.1'%3E🍩%3C/text%3E%3Ctext x='78%25' y='12%25' font-size='36' opacity='0.11'%3E🍭%3C/text%3E%3Ctext x='52%25' y='78%25' font-size='42' opacity='0.12'%3E🍫%3C/text%3E%3Ctext x='8%25' y='82%25' font-size='38' opacity='0.1'%3E🍰%3C/text%3E%3Ctext x='65%25' y='28%25' font-size='44' opacity='0.13'%3E🧁%3C/text%3E%3Ctext x='32%25' y='42%25' font-size='37' opacity='0.11'%3E🍪%3C/text%3E%3Ctext x='88%25' y='75%25' font-size='41' opacity='0.12'%3E🎂%3C/text%3E%3C/svg%3E");
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card::after{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Ctext x='42%25' y='88%25' font-size='39' opacity='0.11'%3E🍩%3C/text%3E%3Ctext x='15%25' y='22%25' font-size='43' opacity='0.12'%3E🍭%3C/text%3E%3Ctext x='75%25' y='58%25' font-size='37' opacity='0.1'%3E🍫%3C/text%3E%3Ctext x='58%25' y='8%25' font-size='40' opacity='0.13'%3E🍰%3C/text%3E%3Ctext x='22%25' y='68%25' font-size='42' opacity='0.11'%3E🧁%3C/text%3E%3Ctext x='85%25' y='42%25' font-size='38' opacity='0.12'%3E🍪%3C/text%3E%3Ctext x='48%25' y='25%25' font-size='41' opacity='0.1'%3E🎂%3C/text%3E%3C/svg%3E");
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
 }
 
 h1{
